@@ -1,21 +1,21 @@
-:root{--color-teal:#0AA3A8;--color-deep:#0B3C49;--color-red:#E53935;--color-orange:#D96C1F;--color-ink:#111318;--color-bg:#0F1418;--text:#E6ECF1;--muted:#A6B0BB;--radius:14px;--maxw:1100px;}
+:root{--header-h:72px;--color-teal:#0AA3A8;--color-deep:#0B3C49;--color-red:#E53935;--color-orange:#D96C1F;--color-ink:#111318;--color-bg:#0F1418;--text:#E6ECF1;--muted:#A6B0BB;--radius:14px;--maxw:1100px;}
 html[data-theme="light"]{--color-bg:#F7FBFD;--color-ink:#0E1216;--text:#111318;--muted:#4B5563}
 *{box-sizing:border-box}html,body{margin:0;padding:0}img{max-width:100%;display:block}
 body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:var(--color-bg);color:var(--text);line-height:1.6}
 .container{max-width:var(--maxw);margin:0 auto;padding:0 16px}
 header{position:sticky;top:0;background:rgba(15,20,24,.75);backdrop-filter:blur(6px);border-bottom:1px solid rgba(255,255,255,.08);z-index:10}
 html[data-theme="light"] header{background:rgba(255,255,255,.8)}
-.header-inner{display:flex;align-items:center;justify-content:space-between;height:72px;gap:12px}
+.header-inner{display:flex;align-items:center;justify-content:space-between;height:var(--header-h);gap:12px}
 .logo{display:flex;align-items:center;gap:10px}
-.logo-img{height:44px;width:auto}
-@media (min-width:900px){.logo-img{height:56px}}
-html[data-theme="dark"] .logo-img{filter:brightness(0) invert(1)} /* logo provided is dark; invert in dark mode */
+.logo-img{height:44px;width:auto}@media(min-width:900px){.logo-img{height:56px}}@media(min-width:900px){.logo-img{height:44px;width:auto}@media(min-width:900px){.logo-img{height:56px}}}
+@media (min-width:900px){.logo-img{height:44px;width:auto}@media(min-width:900px){.logo-img{height:56px}}@media(min-width:900px){.logo-img{height:44px;width:auto}@media(min-width:900px){.logo-img{height:56px}}}}
+html[data-theme="dark"] .logo-img{height:44px;width:auto}@media(min-width:900px){.logo-img{height:56px}}@media(min-width:900px){.logo-img{height:44px;width:auto}@media(min-width:900px){.logo-img{height:56px}}} /* logo provided is dark; invert in dark mode */
 nav a{color:var(--text);text-decoration:none;padding:8px 10px;border-radius:10px}nav a:hover{background:rgba(255,255,255,.06)}
 .btn{display:inline-block;background:var(--color-teal);color:#fff;padding:10px 16px;border-radius:12px;border:0;cursor:pointer;font-weight:700}
 .btn-ghost{background:transparent;border:1px solid rgba(255,255,255,.2);color:var(--text)}
 .badge{display:inline-block;padding:3px 8px;border-radius:999px;background:rgba(10,163,168,.18)}
 .hero{position:relative;padding:56px 0 24px;overflow:hidden}
-.hero .bg{position:absolute;inset:0;background:radial-gradient(900px 400px at 20% -10%, rgba(10,163,168,.25), transparent 60%),radial-gradient(900px 400px at 80% -10%, rgba(217,108,31,.25), transparent 60%)}
+.hero .bg{pointer-events:none;position:absolute;inset:0;background:radial-gradient(900px 400px at 20% -10%, rgba(10,163,168,.25), transparent 60%),radial-gradient(900px 400px at 80% -10%, rgba(217,108,31,.25), transparent 60%)}
 .hero h1{font-size:clamp(28px,6vw,48px);margin:0 0 10px}
 .hero .lead{color:var(--muted);max-width:68ch}
 .hero-cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:16px}
@@ -37,7 +37,7 @@ footer{border-top:1px solid rgba(255,255,255,.12);padding:24px 0;margin-top:24px
 /* --- Fix images aspect ratio & theme-aware logos --- */
 img{height:auto;width:100%;display:block}
 .card img{height:auto !important; width:100% !important; object-fit:contain}
-.logo-img{height:36px; width:auto}
+.logo-img{height:44px;width:auto}@media(min-width:900px){.logo-img{height:56px}}@media(min-width:900px){.logo-img{height:44px;width:auto}@media(min-width:900px){.logo-img{height:56px}}}
 .logo-dark{display:block}
 .logo-light{display:none}
 html[data-theme="light"] .logo-dark{display:none}
@@ -53,3 +53,31 @@ a.btn, a.btn-ghost { text-decoration: none; }
 .btn-ghost:focus { outline: 2px solid rgba(10,163,168,.6); outline-offset: 2px; }
 /* Keep images proportionate */
 .card img{width:100%!important;height:auto!important;object-fit:contain}
+
+section{scroll-margin-top:96px}
+
+
+.logo-img{height:48px;width:auto}
+@media(min-width:900px){.logo-img{height:56px}}
+.logo-dark{display:block}.logo-light{display:none}
+html[data-theme="light"] .logo-dark{display:none}
+html[data-theme="light"] .logo-light{display:block}
+
+/* Hamburger */
+.menu-toggle{display:none;align-items:center;justify-content:center;width:40px;height:40px;border:1px solid rgba(255,255,255,.18);border-radius:12px;background:transparent;color:var(--text)}
+.menu-toggle .bar{display:block;width:18px;height:2px;background:var(--text);margin:2px 0;border-radius:2px}
+@media(max-width:900px){
+  .menu-toggle{display:inline-flex}
+  .nav-links{position:fixed;top:var(--header-h);left:0;right:0;background:rgba(15,20,24,.98);backdrop-filter:blur(4px);border-bottom:1px solid rgba(255,255,255,.08);display:none;flex-direction:column;gap:8px;padding:12px 16px}
+  html[data-theme="light"] .nav-links{background:rgba(255,255,255,.98)}
+  .nav-links.open{display:flex}
+  .nav-links a{padding:10px 4px}
+  .theme-btn{align-self:flex-start}
+}
+/* desktop nav remains inline */
+@media(min-width:901px){
+  .nav-links{display:flex;align-items:center;gap:10px}
+}
+section{scroll-margin-top:calc(var(--header-h) + 16px)}
+/* Ensure hero bg doesn't swallow clicks */
+.hero .bg{pointer-events:none}
