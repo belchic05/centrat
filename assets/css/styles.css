@@ -5,9 +5,10 @@ body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
 .container{max-width:var(--maxw);margin:0 auto;padding:0 16px}
 header{position:sticky;top:0;background:rgba(15,20,24,.75);backdrop-filter:blur(6px);border-bottom:1px solid rgba(255,255,255,.08);z-index:10}
 html[data-theme="light"] header{background:rgba(255,255,255,.8)}
-.header-inner{display:flex;align-items:center;justify-content:space-between;height:64px;gap:12px}
+.header-inner{display:flex;align-items:center;justify-content:space-between;height:72px;gap:12px}
 .logo{display:flex;align-items:center;gap:10px}
-.logo-img{height:36px}
+.logo-img{height:44px;width:auto}
+@media (min-width:900px){.logo-img{height:56px}}
 html[data-theme="dark"] .logo-img{filter:brightness(0) invert(1)} /* logo provided is dark; invert in dark mode */
 nav a{color:var(--text);text-decoration:none;padding:8px 10px;border-radius:10px}nav a:hover{background:rgba(255,255,255,.06)}
 .btn{display:inline-block;background:var(--color-teal);color:#fff;padding:10px 16px;border-radius:12px;border:0;cursor:pointer;font-weight:700}
@@ -41,3 +42,14 @@ img{height:auto;width:100%;display:block}
 .logo-light{display:none}
 html[data-theme="light"] .logo-dark{display:none}
 html[data-theme="light"] .logo-light{display:block}
+
+
+/* No underlines anywhere by default */
+a { text-decoration: none; }
+a:hover, a:focus { text-decoration: none; }
+/* Buttons as links remain non-underlined */
+a.btn, a.btn-ghost { text-decoration: none; }
+/* Ensure ghost button has visible outline on focus for a11y */
+.btn-ghost:focus { outline: 2px solid rgba(10,163,168,.6); outline-offset: 2px; }
+/* Keep images proportionate */
+.card img{width:100%!important;height:auto!important;object-fit:contain}
