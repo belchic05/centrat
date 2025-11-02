@@ -2,145 +2,108 @@
 <html lang="ru" data-theme="dark">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Центр АТ — аддитивные технологии и отечественные SLM‑принтеры</title>
-<meta name="description" content="ЦЕНТР АТ — российские SLM‑принтеры, материалы и сервис. OBA‑ERP для машиностроения и кооперации.">
+<title>Центр АТ — аддитивные технологии и отечественные SLM-принтеры</title>
+<meta name="description" content="SLM-принтеры и ERP на основе Open-Book Accounting. Made in Russia.">
 <link rel="canonical" href="https://centrat.ru/">
-<base href="/centrat/">
 <link rel="icon" href="favicon.ico"><link rel="apple-touch-icon" href="apple-touch-icon.png">
-<meta property="og:type" content="website"><meta property="og:site_name" content="Центр АТ">
-<meta property="og:title" content="Центр АТ — аддитивные технологии и отечественные SLM‑принтеры"><meta property="og:description" content="ЦЕНТР АТ — российские SLM‑принтеры, материалы и сервис. OBA‑ERP для машиностроения и кооперации."><meta property="og:url" content="https://centrat.ru/">
+<meta property="og:type" content="website"><meta property="og:title" content="Центр АТ — SLM принтеры и OBA ERP">
+<meta property="og:description" content="Флагман MeltMaster 3D 550, собственное ПО/АСУТП, OBA ERP."><meta property="og:url" content="https://centrat.ru/">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="preload" href="assets/fonts/Inter-Variable.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="assets/css/styles.css">
-<style>body{margin:0;font-family:Inter,Manrope,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:#0F1418;color:#E6ECF1}.container{max-width:1200px;margin:0 auto;padding:0 16px}.btn{display:inline-block;background:#0AA3A8;color:#fff;padding:10px 16px;border-radius:12px;border:0;cursor:pointer;font-weight:600}</style>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "Центр АТ", "url": "https://centrat.ru", "logo": "https://centrat.ru/assets/img/logo-mark.svg", "email": "info@centrat.ru", "contactPoint": [{"@type": "ContactPoint", "email": "info@centrat.ru", "contactType": "sales"}]}</script>
+<style>@media (prefers-reduced-motion: reduce) { html { scroll-behavior:auto } }</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Центр АТ","url":"https://centrat.ru","logo":"https://centrat.ru/assets/img/logo-mark.svg","email":"info@centrat.ru"}</script>
 </head>
 <body>
 <a href="#main" class="skip-link">Перейти к содержимому</a>
-<header role="banner">
+<header>
   <div class="container header-inner">
-    <a class="logo" href="index.html" aria-label="На главную">
-      <img src="assets/img/logo-mark.svg" alt="Логотип Центр АТ" width="36" height="36"><span>Центр АТ</span>
-    </a>
-    <nav id="site-nav" class="nav" role="navigation" aria-label="Main" data-open="false">
-      <button id="nav-toggle" class="btn btn-ghost" aria-expanded="false" aria-controls="site-nav" onclick="__toggleNav()">Меню</button>
-      <div class="nav-links">
-        <a href="technology.html">Технология</a>
-        <a href="products/index.html">Каталог</a>
-        <a href="oba.html">OBA-ERP</a>
-        <a href="cases.html">Кейсы</a>
-        <a href="news.html">Новости</a>
-        <a href="about.html">О нас</a>
-        <a href="contacts.html">Контакты</a>
-      </div>
+    <a class="logo" href="#"><img src="assets/img/logo-mark.svg" alt="" width="32" height="32"><span>Центр АТ</span></a>
+    <nav aria-label="Главное меню">
+      <a href="#product">Принтер</a><a href="#tech">Технология</a><a href="#oba">OBA-ERP</a><a href="#cases">Отрасли</a><a href="#contact">Контакты</a>
+      <button class="btn btn-ghost" onclick="toggleTheme()" aria-label="Переключить тему">Тема</button>
     </nav>
-    <div class="nav">
-      <button id="theme-toggle" class="btn btn-ghost" aria-pressed="false" onclick="__toggleTheme()">Тема</button>
-      <button class="btn btn-ghost" onclick="__toggleLang()" aria-label="Switch language">RU/EN</button>
-    </div>
   </div>
 </header>
-<main id="main" tabindex="-1" class="container">
 
-<section class="hero">
-  <div class="bg" aria-hidden="true"></div>
-  <div class="container">
-    <h1>ЦЕНТР АТ — аддитивные технологии и отечественные SLM‑принтеры. <span class="badge">Made in Russia</span></h1>
-    <p class="lead">От R&D до серийного производства: камера до 550×450×450 мм, до 8 лазеров, температурная стабильность до 800 °C, собственное ПО/АСУТП и сервис по РФ.</p>
-    <div class="hero-cta">
-      <a class="btn" href="products/index.html">Каталог принтеров</a>
-      <a class="btn btn-ghost" href="oba.html">OBA‑ERP для станкостроения</a>
-      <a class="btn" href="contacts.html#lead">Запросить КП</a>
+<main id="main" class="container" tabindex="-1">
+  <section class="hero" id="hero">
+    <div class="bg" aria-hidden="true"></div>
+    <div class="container">
+      <h1>ЦЕНТР АТ — аддитивные технологии и отечественные SLM‑принтеры. <span class="badge">Made in Russia</span></h1>
+      <p class="lead">От R&amp;D до серийного производства: камера 550×450×450 мм, до 8 лазеров, температурная стабильность до 800 °C, собственное ПО/АСУТП и сервис по РФ.</p>
+      <div class="hero-cta"><a class="btn" href="#contact">Запросить КП</a><a class="btn btn-ghost" href="#product">Флагман MeltMaster 3D 550</a></div>
+      <img src="assets/img/hero.webp" alt="" loading="lazy" width="1600" height="800" style="margin-top:16px;border-radius:14px;border:1px solid rgba(255,255,255,.1)">
     </div>
-  </div>
-</section>
-<section class="section">
-  <h2 class="section-title">Почему мы</h2>
-  <div class="grid" style="grid-template-columns:repeat(3,1fr)">
-    <div class="card"><div class="card-body feature"><span class="icon">RU</span><div><h3 class="h4">Технологический суверенитет</h3><p class="muted">Полная локализация ключевых узлов и ПО.</p></div></div></div>
-    <div class="card"><div class="card-body feature"><span class="icon">SW</span><div><h3 class="h4">Собственное ПО/АСУТП</h3><p class="muted">Мониторинг слоя, трекинг лазеров, план‑факт.</p></div></div></div>
-    <div class="card"><div class="card-body feature"><span class="icon">SVC</span><div><h3 class="h4">Сервис по РФ</h3><p class="muted">Обучение, пуско‑наладка и сопровождение жизненного цикла.</p></div></div></div>
-  </div>
-</section>
-<section class="section">
-  <h2 class="section-title">Флагман</h2>
-  <article class="card">
-    <img src="assets/img/meltmaster-550.webp" alt="MeltMaster 3D 550" loading="lazy" width="1200" height="600">
-    <div class="card-body">
-      <h3 class="h4">MeltMaster 3D 550</h3>
-      <p class="muted">Камера 550×450×450 мм • 1–8 лазеров • До 800 °C • АСУТП • Постобработка • Сервис</p>
-      <p><a class="btn" href="products/meltmaster-550.html">Подробнее</a></p>
-    </div>
-  </article>
-</section>
-<section class="section">
-  <h2 class="section-title">OBA для кооперации</h2>
-  <div class="card"><div class="card-body">
-    <p>Открытая калькуляция себестоимости, контроль сроков и рисков, загрузка мощностей, управляемая кооперация. Прозрачность по контрактам и план‑факт в реальном времени.</p>
-    <p><a class="btn btn-ghost" href="oba.html">Подробнее про OBA‑ERP</a></p>
-  </div></div>
-</section>
-<section class="section">
-  <h2 class="section-title">Отрасли</h2>
-  <div class="grid" style="grid-template-columns:repeat(5,1fr)">
-    <span class="badge">Авиация</span><span class="badge">Энергетика</span><span class="badge">Медицина</span><span class="badge">Нефтегаз</span><span class="badge">Космос</span>
-  </div>
-</section>
-<section class="section">
-  <h2 class="section-title">Новости</h2>
-  <div id="news-preview" class="grid" style="grid-template-columns:repeat(3,1fr)"></div>
-  <p><a class="btn btn-ghost" href="news.html">Все новости</a></p>
-</section>
-<section class="section" id="lead">
-  <h2 class="section-title">Провести демо</h2>
-  <form class="card" data-ajax style="padding:16px" aria-describedby="lead-note">
-    <input type="hidden" name="purpose" value="request-demo">
-    <div class="form-row">
-      <div><label>Имя<input name="name" required></label></div>
-      <div><label>Email / Телефон<input name="email" required></label></div>
-    </div>
-    <div><label>Комментарий<textarea name="message" rows="4" placeholder="Что показать на демо?"></textarea></label></div>
-    <p id="lead-note" class="muted">Отправляя форму, вы соглашаетесь с <a href="privacy.html">политикой конфиденциальности</a>.</p>
-    <p class="form-msg" aria-live="polite"></p>
-    <button class="btn" type="submit">Отправить</button>
-  </form>
-</section>
-<script>fetch("data/news.json").then(r=>r.json()).then(d=>{const el=document.getElementById("news-preview");const items=(d.items||[]).slice(0,3);el.innerHTML=items.map(n=>`<article class="card"><img src="${n.image}" alt="${n.title}" loading="lazy"><div class="card-body"><h3 class="h4">${n.title}</h3><p class="muted">${new Date(n.date).toLocaleDateString('ru-RU')}</p><p>${n.excerpt||''}</p></div></article>`).join("")});</script>
+  </section>
 
+  <section class="section" id="why"><h2>Почему мы</h2>
+    <div class="grid g-3">
+      <div class="card"><div class="card-body feature"><span class="icon">RU</span><div><h3 class="small">Технологический суверенитет</h3><p class="muted">Локализация ключевых узлов и ПО.</p></div></div></div>
+      <div class="card"><div class="card-body feature"><span class="icon">SW</span><div><h3 class="small">Собственное ПО/АСУТП</h3><p class="muted">Мониторинг слоя, трекинг лазеров, план‑факт.</p></div></div></div>
+      <div class="card"><div class="card-body feature"><span class="icon">SVC</span><div><h3 class="small">Сервис по РФ</h3><p class="muted">Пуско‑наладка, обучение, сопровождение.</p></div></div></div>
+    </div>
+  </section>
+
+  <section class="section" id="product"><h2>MeltMaster 3D 550</h2>
+    <div class="grid g-2">
+      <img class="card" src="assets/img/meltmaster.webp" alt="MeltMaster 3D 550" loading="lazy" width="1200" height="700">
+      <div class="card"><div class="card-body">
+        <p class="muted">Камера 550×450×450 мм • 1–8 лазеров • До 800 °C • АСУТП • Постобработка • Сервис</p>
+        <ul class="spec"><li>Камера: 550×450×450 мм</li><li>Конфигурация: 1–8 лазеров</li><li>Температура камеры: до 800 °C</li><li>Материалы: Al, Ti, Ni, CoCr, стали</li></ul>
+        <a class="btn" href="#contact" aria-label="Запросить КП на MeltMaster 3D 550">Запросить КП</a>
+      </div></div>
+    </div>
+  </section>
+
+  <section class="section" id="tech"><h2>Технология SLM</h2>
+    <div class="grid g-2">
+      <div class="card"><div class="card-body">
+        <ul class="spec"><li>Порошок → дозирование, рециркуляция</li><li>Формирование слоя → ракель/щетка</li><li>Лазеры 1–8 → маршрутизация, трекинг</li><li>Мониторинг слоя → камера, МПК, термоконтроль</li></ul>
+      </div></div>
+      <div class="card"><div class="card-body">
+        <strong>Безопасность и материалы</strong>
+        <p class="small muted">Фракция, сферичность, чистота; фильтрация/рекуперация; совместимость со сплавами Al, Ti, Ni, CoCr и сталями.</p>
+      </div></div>
+    </div>
+  </section>
+
+  <section class="section" id="oba"><h2>OBA‑ERP: прозрачная себестоимость и сроки</h2>
+    <div class="grid g-2">
+      <img class="card" src="assets/img/oba.webp" alt="Демо OBA ERP" loading="lazy" width="1200" height="600">
+      <div class="card"><div class="card-body">
+        <p>Open‑Book Accounting: открытая калькуляция, управление кооперацией, контроль рисков/сроков, план‑факт по контрактам, загрузка мощностей.</p>
+        <a class="btn btn-ghost" href="#contact">Запросить демо ERP</a>
+      </div></div>
+    </div>
+  </section>
+
+  <section class="section" id="cases"><h2>Отрасли</h2>
+    <div class="grid g-3">
+      <div class="card"><div class="card-body"><span class="badge">Авиация</span><p class="small muted">Снижение массы деталей, кооперация.</p></div></div>
+      <div class="card"><div class="card-body"><span class="badge">Энергетика</span><p class="small muted">Рост ресурса и снижение TCO.</p></div></div>
+      <div class="card"><div class="card-body"><span class="badge">Медицина</span><p class="small muted">Индивидуальные импланты, прослеживаемость.</p></div></div>
+    </div>
+  </section>
+
+  <section class="section" id="contact"><h2>Запросить КП / демо</h2>
+    <form class="card" data-ajax style="padding:16px">
+      <input type="hidden" name="purpose" value="landing-contact">
+      <div class="form-row"><div><label>Имя<input name="name" required></label></div><div><label>Email / Телефон<input name="email" required></label></div></div>
+      <div><label>Комментарий<textarea name="message" rows="4" placeholder="Что интересует: принтер, ERP, материалы?"></textarea></label></div>
+      <p class="form-msg small" aria-live="polite"></p>
+      <button class="btn" type="submit">Отправить</button>
+      <p class="small muted">Контакты: info@centrat.ru · +7 (XXX) XXX-XX-XX</p>
+    </form>
+  </section>
+
+  <section class="section small" id="privacy">
+    <details class="card"><summary class="card-body"><strong>Политика конфиденциальности (кратко)</strong></summary>
+      <div class="card-body small muted">Данные формы (имя, контакт, сообщение) используются только для связи по вашему запросу и не передаются третьим лицам.</div>
+    </details>
+  </section>
 </main>
-<footer role="contentinfo">
-  <div class="container footer-grid">
-    <div>
-      <div class="logo"><img src="assets/img/logo-mark.svg" alt="" width="36" height="36"><span>Центр АТ</span></div>
-      <p class="muted">Аддитивные технологии и отечественные SLM‑принтеры. Made in Russia.</p>
-      <p class="mono">© 2025 Центр АТ. Все права защищены.</p>
-    </div>
-    <div>
-      <nav aria-label="Legal">
-        <ul class="spec">
-          <li><a href="privacy.html">Политика конфиденциальности</a></li>
-          <li><a href="sitemap.xml">Sitemap</a></li>
-          <li><a href="robots.txt">Robots</a></li>
-        </ul>
-      </nav>
-    </div>
-    <div>
-      <form class="card" data-ajax style="padding:16px">
-        <h3 class="h4">Быстрый контакт</h3>
-        <input type="hidden" name="purpose" value="footer-quick-contact">
-        <div class="form-row">
-          <div><label>Имя<input name="name" required></label></div>
-          <div><label>Email / Телефон<input name="email" placeholder="email или телефон"></label></div>
-        </div>
-        <div><label>Сообщение<textarea name="message" rows="3" placeholder="Коротко о запросе"></textarea></label></div>
-        <p class="form-msg" aria-live="polite"></p>
-        <button class="btn" type="submit">Отправить</button>
-      </form>
-    </div>
-  </div>
-</footer>
-<script defer src="assets/js/vendor/fuse.min.js"></script>
+
+<footer><div class="container"><p class="small muted">© 2025 Центр АТ. Все права защищены.</p></div></footer>
 <script defer src="assets/js/main.js"></script>
 <script defer src="assets/js/forms.js"></script>
-</body>
-</html>
+</body></html>
