@@ -1,0 +1,15 @@
+{
+  "name": "Центр АТ",
+  "short_name": "Центр АТ",
+  "start_url": "/centrat/index.html",
+  "display": "standalone",
+  "background_color": "#0F1418",
+  "theme_color": "#0AA3A8",
+  "icons": [
+    {
+      "src": "apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ]
+}

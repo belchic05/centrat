@@ -1,0 +1,33 @@
+{
+  "items": [
+    {
+      "id": "meltmaster-550",
+      "title": "MeltMaster 3D 550",
+      "subtitle": "Камера 550×450×450 мм, 1–8 лазеров, до 800 °C",
+      "keySpecs": [
+        "550×450×450 мм",
+        "1–8 лазеров",
+        "до 800 °C",
+        "АСУТП и мониторинг слоя"
+      ],
+      "page": "products/meltmaster-550.html",
+      "images": [
+        "assets/img/meltmaster-550.webp"
+      ]
+    },
+    {
+      "id": "meltmaster-300",
+      "title": "MeltMaster 3D 300",
+      "subtitle": "Камера 300×300×350 мм, 1–4 лазера",
+      "keySpecs": [
+        "300×300×350 мм",
+        "1–4 лазера",
+        "до 600 °C"
+      ],
+      "page": "products/index.html#mm300",
+      "images": [
+        "assets/img/meltmaster-550.webp"
+      ]
+    }
+  ]
+}
