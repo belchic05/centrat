@@ -32,3 +32,12 @@ label{font-weight:600;font-size:14px}.form-row{display:grid;gap:12px}@media (min
 footer{border-top:1px solid rgba(255,255,255,.12);padding:24px 0;margin-top:24px}
 .skip-link{position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden}.skip-link:focus{left:16px;top:8px;background:#fff;color:#000;border-radius:8px;padding:8px 10px}
 .small{font-size:13px}
+
+/* --- Fix images aspect ratio & theme-aware logos --- */
+img{height:auto;width:100%;display:block}
+.card img{height:auto !important; width:100% !important; object-fit:contain}
+.logo-img{height:36px; width:auto}
+.logo-dark{display:block}
+.logo-light{display:none}
+html[data-theme="light"] .logo-dark{display:none}
+html[data-theme="light"] .logo-light{display:block}
