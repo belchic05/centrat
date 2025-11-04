@@ -72,3 +72,12 @@ section{scroll-margin-top:84px}
   font-weight:600;
 }
 .light .hint{ color:#5c6a73; }
+
+
+/* light contacts contrast */
+.light .contacts-card a,
+.light .contacts-card a:visited{
+  color:#0B3C49;
+  font-weight:600;
+}
+.light .contacts-card a:hover{ text-decoration: underline; }
